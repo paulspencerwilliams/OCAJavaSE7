@@ -1,13 +1,18 @@
 package exercise_1_1;
 
-import java.io.*;
-import java.text.*;
-import java.util.*;
-import java.util.logging.*;
+
+import java.io.File;
+import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.logging.FileHandler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class TestClass {
     public static void main (String[] args) throws IOException {
-        new File ("logs").mkdir();
+        new File("logs").mkdir();
         DateFormat df = new SimpleDateFormat("yyyyMMddhhmmss");
         Date now = new Date();
         String date = df.format(now);
