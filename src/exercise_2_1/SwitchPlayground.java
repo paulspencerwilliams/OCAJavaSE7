@@ -1,25 +1,25 @@
-package chapter_2;
+package exercise_2_1;
 
 public class SwitchPlayground {
-    enum ClamBait {FRESH, SALTED, ARTIFICIAL};
+
 
     public static void main (String[] args) {
-        printBait(ClamBait.SALTED);
+        printBait("SALTED");
         System.out.println("next");
-        printBait(ClamBait.FRESH);
+        printBait("FRESH");
     }
 
-    private static void printBait(ClamBait bait) {
+    private static void printBait(String bait) {
         switch (bait)
         {
-            case SALTED:
+            case "SALTED":
                 System.out.println("Salted");
             default:
                 System.out.println("Don't know");
-            case FRESH:
+            case "FRESH":
                 System.out.println("Fresh");
                 break;
-            case ARTIFICIAL:
+            case "ARTIFICIAL":
                 System.out.println("Artificial");
                 break;
 
